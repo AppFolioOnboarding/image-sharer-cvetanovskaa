@@ -3,8 +3,7 @@
   <head>
     <title>Hello, world!</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= stylesheet_link_tag 'home', media: 'all' %>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,7 +13,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body>
-    <%= yield %>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -22,7 +20,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'home' %>
     <%= javascript_pack_tag 'application' %>
+
+    <div class="main">
+      <div class="container">
+        <h1>Image Sharer</h1>
+        <h3> Welcome to the Image Sharer App!</h3>
+      </div>
+    </div>
+    <hr>
+
   </body>
 </html>
