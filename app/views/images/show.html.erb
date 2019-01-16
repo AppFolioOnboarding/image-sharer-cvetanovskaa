@@ -1,0 +1,15 @@
+<% if flash[:notice] %>
+  <div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <p class="notice"><%= notice %></p>
+  </div>
+<% end %>
+
+<div class="container">
+  <div class="row">
+    <%= image_tag @image.url %>
+  </div>
+  <div class="row pt-4">
+    <%= link_to "Home Page", root_path, class: "btn btn-dark" %>
+  </div>
+</div>
