@@ -8,4 +8,11 @@
       <%= link_to "Submit an image URL", new_image_path, class: "btn btn-dark" %>
     </div>
   </div>
+  <div class="container">
+    <% @images.each do |img| %>
+      <div>
+        <%= image_tag(img.url, :class => 'img') %>
+      </div>
+    <% end %>
+  </div>
 </div>
