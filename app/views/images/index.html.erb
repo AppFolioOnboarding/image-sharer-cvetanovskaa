@@ -11,7 +11,7 @@
   <div class="container">
     <% @images.each do |img| %>
       <div>
-        <%= image_tag(img.url, :class => 'img') %>
+        <%= image_tag(img.url, class: 'image_format') %>
       </div>
     <% end %>
   </div>

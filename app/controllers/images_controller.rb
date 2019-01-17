@@ -1,6 +1,6 @@
 class ImagesController < ApplicationController
   def index
-    @images = Image.all.order('created_at DESC')
+    @images = Image.all.order(created_at: :desc)
   end
 
   def new
