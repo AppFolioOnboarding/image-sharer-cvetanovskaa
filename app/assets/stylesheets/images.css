@@ -1,4 +1,17 @@
 .image_format{
   max-width:400px;
-  padding-top: 1em;
+  max-height: 250px;
+  padding: 1em;
+}
+
+.image_card--card{
+  -webkit-box-orient: vertical;
+  border: none;
+  background-color: #f8f9fa;
+}
+
+.input_error_format{
+  margin-top: -.5em;
+  color:red;
+  font-weight: bold;
 }
