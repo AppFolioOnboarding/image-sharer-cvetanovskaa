@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer_format {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+}
+
+.fa-navicon {
+  color:white;
+}
