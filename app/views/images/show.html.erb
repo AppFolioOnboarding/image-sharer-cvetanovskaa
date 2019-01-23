@@ -9,7 +9,14 @@
   <div class="row">
     <%= image_tag @image.url %>
   </div>
-  <div class="row pt-4">
+
+  <div class=" card-link">
+    <% @image.tag_list.each do |tag| %>
+      <%= link_to tag, class: 'card-link' %>
+    <% end %>
+  </div>
+
+  <div class="container pt-4">
     <%= link_to "Home Page", root_path, class: "btn btn-dark" %>
   </div>
 </div>
