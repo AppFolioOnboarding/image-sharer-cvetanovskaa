@@ -13,7 +13,13 @@
     <div class="row">
       <% @images.each do |img| %>
         <div class="image_card--card col-md-4 mt-2">
-          <%= image_tag(img.url, :class => 'image_format card-img-top') %>
+
+          <%= image_tag(img.url, class: 'image_format card-img-top') %>
+          <div class="pt-2 pb-2 ">
+            <% img.tag_list.each do |tag| %>
+              <%= link_to tag, class: 'card-link' %>
+            <% end %>
+          </div>
         </div>
       <% end %>
     </div>
